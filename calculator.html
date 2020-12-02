@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+         <script src="main.js"></script>
+
+
+<style>
+#cal-contain
+{
+  background-color: #1a1a1a ;
+  position: relative;
+  width: 350px;
+  height: 200px;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-top: 10%;
+  margin-left: 35%; 
+  padding: 20px 20px 100px 20px;
+}
+
+#agh p
+{
+  font-size: 20px;
+  font-weight: 900;
+}
+
+input[type=button] 
+{
+  background: white;
+  width: 20%;
+  font-size: 20px;
+  font-weight: 900;
+  border-radius: 7px;
+  margin-left: 13px;
+  margin-top: 10px;
+}
+
+input[type=button]:active 
+{
+  background-color: #3e8e41;
+  box-shadow: 2 3px #666;
+  transform: translateY(4px);
+}
+
+input[type=button]:hover 
+{
+  background-color: #a8a5a5;
+  color: white;
+}
+
+input[type = text] 
+{
+  position: relative;
+  display: block;
+  width: 90%;
+  margin: 5px auto;
+  font-size: 20px;
+  padding: 10px;
+  box-shadow: 2px 2px 2px black inset;
+}
+</style>
+
+
+    </head>
+    <body>
+      <div id='cal-contain'>
+  
+          <form name="calculator">
+            <input type="text" name="answer" id="result1"/>
+            </br> 
+            <input type="button" value="1" onclick="calculate('1')"/>
+            <input type="button" value="2" onclick="calculate('2')"/>
+            <input type="button" value="3" onclick="calculate('3')"/>
+            <input type="button" value="/" onclick="compute('/')"/>
+            </br>
+            <input type="button" value="4" onclick="calculate('4')"/>
+            <input type="button" value="5" onclick="calculate('5')"/>
+            <input type="button" value="6" onclick="calculate('6')"/>
+            <input type="button" value="*" onclick="compute('*')"/>
+            </br>
+            <input type="button" value="7" onclick="calculate('7')"/>
+            <input type="button" value="8" onclick="calculate('8')"/>
+            <input type="button" value="9" onclick="calculate('9')"/>
+            <input type="button" value="+" onclick="compute('+')"/>
+            </br>
+            <input type="button" value="C" onclick="clears()"/>
+            <input type="button" value="0" onclick="calculate('0')"/>
+            <input type="button" value="=" onclick="compute('')"/>
+            <input type="button" value="-" onclick="compute('-')"/>
+            </br>  
+          </form>
+           
+        <center style="margin-top: 5%"><svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-calculator" fill="white" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" d="M12 1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z"/>
+        <path d="M4 2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-2zm0 4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-4z"/></svg> 
+        </center> 
+      </div>
+    </body>
+ 
+</html>
